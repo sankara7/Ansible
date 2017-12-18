@@ -188,7 +188,7 @@
         "autoUpgradeMinorVersion": true,
         "settings": {
           "fileUris": [
-            "https://raw.githubusercontent.com/sankara7/TFS_Repo/master/script1.sh"
+            "https://raw.githubusercontent.com/sankara7/Ansible/master/script1.sh"
           ],
           "commandToExecute": "sh script1.sh"
         }
