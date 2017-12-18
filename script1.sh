@@ -7,9 +7,9 @@ apt-get update
 apt-get install ansible -y
 apt-get install unzip -y
 
-wget https://github.com/sankara7/TFS_Repo/raw/master/Ansible1.zip
-unzip Ansible1.zip -d /tmp
+wget https://github.com/sankara7/TFS_Repo/raw/master/Configfiles.zip
+unzip Configfiles.zip -d /home
 
-cd /tmp/Ansible1
+cd /home
 
-ansible-playbook Play_Apache.yml
+ansible-playbook docker_install.yml
