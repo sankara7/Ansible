@@ -14,5 +14,14 @@
         "publicIPAddressName": {
             "value": "devopsmon1"
         }
+        "Java": {
+            "value": "yes"
+        }
+        "Docker": {
+            "value": "yes"
+        }
+        "Hostmetrics": {
+            "value": "no"
+        }
    }
 }
