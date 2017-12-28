@@ -44,7 +44,7 @@
     "subnetPrefix": "10.0.0.0/24",
     "storageAccountType": "Standard_LRS",
     "publicIPAddressName": "devopsvm",
-    "publicIPAddressType": "Dynamic",
+    "publicIPAddressType": "Static",
     "vmName": "MyUbuntuVM1",
     "vmSize": "Standard_A1",
     "virtualNetworkName": "MyVNET1",
