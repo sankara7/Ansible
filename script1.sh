@@ -1,5 +1,10 @@
 #!/bin/bash
 
+# Script parameters from arguments
+Java= $1
+Docker= $2
+Hostmetrics = $3
+
 apt-get update
 apt-get install software-properties-common -y
 apt-add-repository ppa:ansible/ansible -y
