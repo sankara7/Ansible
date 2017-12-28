@@ -9,7 +9,10 @@
             "value": "testpass@123"
         },
         "dnsLabelPrefix": {
-            "value": "devopsmon"
+            "value": "devopsmon1"
+        }
+        "publicIPAddressName": {
+            "value": "devopsmon1"
         }
    }
 }
