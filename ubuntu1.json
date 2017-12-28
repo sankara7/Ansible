@@ -214,7 +214,7 @@
           "fileUris": [
             "https://raw.githubusercontent.com/sankara7/Ansible/master/script1.sh"
           ],
-           "commandToExecute": "[concat('sh script1.sh', parameters('Java'), parameters('Docker'), parameters('Hostmetrics'))]"
+           "commandToExecute": "[concat('sh script1.sh',' ',parameters('Java'),' ',parameters('Docker'),' ',parameters('Hostmetrics'))]"
         }
       }
     }
