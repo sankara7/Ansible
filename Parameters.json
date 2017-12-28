@@ -9,7 +9,7 @@
             "value": "testpass@123"
         },
         "dnsLabelPrefix": {
-            "value": "myvmdnsub9"
+            "value": "devopsmon"
         }
    }
 }
