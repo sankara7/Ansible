@@ -20,6 +20,30 @@
         "description": "Unique DNS Name for the Public IP used to access the Virtual Machine."
       }
     },
+    "publicIPAddressName": {
+      "type": "string",
+      "metadata": {
+        "description": "Unique publicIP Name for the network setup for Virtual Machine."
+      }
+    },
+    "Java": {
+      "type": "string",
+      "metadata": {
+        "description": "To get yes or no value for Java setup"
+      }
+    },
+     "Docker": {
+      "type": "string",
+      "metadata": {
+        "description": "To get yes or no value for Docker setup"
+      }
+    },
+    "Hostmetrics": {
+      "type": "string",
+      "metadata": {
+        "description": "To get yes or no value for Hostmetrics"
+      }
+    },
     "ubuntuOSVersion": {
       "type": "string",
       "defaultValue": "16.04.0-LTS",
@@ -110,7 +134,7 @@
           {
             "name": "ipconfig1",
             "properties": {
-              "privateIPAllocationMethod": "Static",
+              "privateIPAllocationMethod": "Dynamic",
               "publicIPAddress": {
                 "id": "[resourceId('Microsoft.Network/publicIPAddresses',variables('publicIPAddressName'))]"
               },
@@ -190,7 +214,8 @@
           "fileUris": [
             "https://raw.githubusercontent.com/sankara7/Ansible/master/script1.sh"
           ],
-          "commandToExecute": "sh script1.sh"
+           "commandToExecute": "[concat('sh script1.sh', parameters('Java'), ' parameters('Docker') ', parameters('Hostmetrics'))]"
+          
         }
       }
     }
