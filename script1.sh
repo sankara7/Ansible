@@ -18,6 +18,4 @@ apt-get install unzip -y
 wget https://github.com/sankara7/Ansible/raw/master/Configfiles.zip
 unzip Configfiles.zip -d /home
 
-cd /home
 
-ansible-playbook docker_install.yml
