@@ -5,10 +5,10 @@ Java=$1
 Docker=$2
 Hostmetrics=$3
 var=$(dig +short myip.opendns.com @resolver1.opendns.com)
-echo $var >> textfile.txt
-echo "$Java" >> textfile.txt
-echo "$Docker" >> textfile.txt
-echo "$Hostmetrics" >> textfile.txt
+echo $var >> /home/textfile.txt
+echo "$Java" >> /home/textfile.txt
+echo "$Docker" >> /home/textfile.txt
+echo "$Hostmetrics" >> /home/textfile.txt
 
 apt-get update
 apt-get install software-properties-common -y
