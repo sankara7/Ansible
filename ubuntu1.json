@@ -56,16 +56,16 @@
     "storageAccountName": "[concat(uniquestring(resourceGroup().id), 'salinuxvm')]",
     "imagePublisher": "Canonical",
     "imageOffer": "UbuntuServer",
-    "nicName": "[concat(parameters('LabelPrefix'),'_myVMNic')]",
+    "nicName": "[concat(parameters('LabelPrefix'),'myVMNic')]",
     "addressPrefix": "10.0.0.0/16",
     "subnetName": "Subnet1",
     "subnetPrefix": "10.0.0.0/24",
     "storageAccountType": "Standard_LRS",
-    "publicIPAddressName": "[concat(parameters('LabelPrefix'),'_myPUBIP')]",
+    "publicIPAddressName": "[concat(parameters('LabelPrefix'),'myPUBIP')]",
     "publicIPAddressType": "Dynamic",
     "vmName": "MyUbuntuVM2",
     "vmSize": "Standard_A1",
-    "virtualNetworkName": "[concat(parameters('LabelPrefix'),'_myVNET')]",
+    "virtualNetworkName": "[concat(parameters('LabelPrefix'),'myVNET')]",
     "vnetID": "[resourceId('Microsoft.Network/virtualNetworks',variables('virtualNetworkName'))]",
     "subnetRef": "[concat(variables('vnetID'),'/subnets/',variables('subnetName'))]"
   },
@@ -89,7 +89,7 @@
       "properties": {
         "publicIPAllocationMethod": "[variables('publicIPAddressType')]",
         "dnsSettings": {
-          "domainNameLabel": "[concat(parameters('LabelPrefix'),'_mydns')]"
+          "domainNameLabel": "[concat(parameters('LabelPrefix'),'mydns')]"
         }
       }
     },
