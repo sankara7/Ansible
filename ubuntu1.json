@@ -38,6 +38,12 @@
         "description": "To get yes or no value for Hostmetrics"
       }
     },
+    "JavaIP": {
+      "type": "string",
+      "metadata": {
+        "description": "To get JavaJvm ip address"
+      }
+    },
     "ubuntuOSVersion": {
       "type": "string",
       "defaultValue": "16.04.0-LTS",
@@ -208,7 +214,7 @@
           "fileUris": [
             "https://raw.githubusercontent.com/sankara7/Ansible/master/script1.sh"
           ],
-           "commandToExecute": "[concat('sh script1.sh',' ',parameters('Java'),' ',parameters('Docker'),' ',parameters('Hostmetrics'))]"
+           "commandToExecute": "[concat('sh script1.sh',' ',parameters('Java'),' ',parameters('Docker'),' ',parameters('Hostmetrics'),' ',parameters('JavaIP'))]"
         }
       }
     }
