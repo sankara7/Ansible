@@ -61,7 +61,7 @@
     "subnetName": "Subnet1",
     "subnetPrefix": "10.0.0.0/24",
     "storageAccountType": "Standard_LRS",
-    "publicIPAddressName": "[concat(parameters('LabelPrefix'),'_myPubIP')]",
+    "publicIPAddressName": "[concat(parameters('LabelPrefix'),'_myPUBIP')]",
     "publicIPAddressType": "Dynamic",
     "vmName": "MyUbuntuVM2",
     "vmSize": "Standard_A1",
