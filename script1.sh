@@ -4,6 +4,8 @@
 Java=$1
 Docker=$2
 Hostmetrics=$3
+var=$(dig +short myip.opendns.com @resolver1.opendns.com)
+echo $var >> textfile.txt
 echo "$Java" >> textfile.txt
 echo "$Docker" >> textfile.txt
 echo "$Hostmetrics" >> textfile.txt
