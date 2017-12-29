@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # Script parameters from arguments
-Java= $1
-Docker= $2
-Hostmetrics = $3
+Java=$1
+Docker=$2
+Hostmetrics=$3
 echo "$Java" >> textfile.txt
 echo "$Docker" >> textfile.txt
 echo "$Hostmetrics" >> textfile.txt
