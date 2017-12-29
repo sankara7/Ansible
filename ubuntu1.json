@@ -14,16 +14,10 @@
         "description": "Password for the Virtual Machine."
       }
     },
-    "dnsLabelPrefix": {
+    "LabelPrefix": {
       "type": "string",
       "metadata": {
-        "description": "Unique DNS Name for the Public IP used to access the Virtual Machine."
-      }
-    },
-    "publicIPAddressName": {
-      "type": "string",
-      "metadata": {
-        "description": "Unique publicIP Name for the network setup for Virtual Machine."
+        "description": "Unique LabelPrefix"
       }
     },
     "Java": {
@@ -62,7 +56,7 @@
     "storageAccountName": "[concat(uniquestring(resourceGroup().id), 'salinuxvm')]",
     "imagePublisher": "Canonical",
     "imageOffer": "UbuntuServer",
-    "nicName": "myVMNicc1",
+    "nicName": "[concat(parameters('LabelPrefix'),'_myVMNic')]",
     "addressPrefix": "10.0.0.0/16",
     "subnetName": "Subnet1",
     "subnetPrefix": "10.0.0.0/24",
@@ -71,7 +65,7 @@
     "publicIPAddressType": "Dynamic",
     "vmName": "MyUbuntuVM2",
     "vmSize": "Standard_A1",
-    "virtualNetworkName": "MyVNET1",
+    "virtualNetworkName": "[concat(parameters('LabelPrefix'),'_myVNET')]",
     "vnetID": "[resourceId('Microsoft.Network/virtualNetworks',variables('virtualNetworkName'))]",
     "subnetRef": "[concat(variables('vnetID'),'/subnets/',variables('subnetName'))]"
   },
@@ -95,7 +89,7 @@
       "properties": {
         "publicIPAllocationMethod": "[variables('publicIPAddressType')]",
         "dnsSettings": {
-          "domainNameLabel": "[parameters('dnsLabelPrefix')]"
+          "domainNameLabel": "[concat(parameters('LabelPrefix'),'_mydns')]",
         }
       }
     },
