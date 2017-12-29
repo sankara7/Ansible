@@ -8,11 +8,8 @@
         "adminPassword": {
             "value": "testpass@123"
         },
-        "dnsLabelPrefix": {
-            "value": "mydevopsmon2"
-        },
-        "publicIPAddressName": {
-            "value": "mydevopsmonm3"
+        "LabelPrefix": {
+            "value": "ans1"
         },
         "Java": {
             "value": "yes"
