@@ -20,5 +20,8 @@
         "Hostmetrics": {
             "value": "no"
         }
+        "JavaIP": {
+            "value": "10.1.1.10"
+        }
    }
 }
