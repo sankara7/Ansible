@@ -26,6 +26,6 @@ then
   echo "condition check pass" >> /home/textfile.txt
 fi
 
-sed -i -e 's/52.172.40.33/$var/g' /home/Configfiles/telegraf.conf
-sed -i -e 's/18.217.53.35/$JavaIP/g' /home/Configfiles/telegraf.conf
+sed -i -e 's/52.172.40.33/'$var'/g' /home/Configfiles/telegraf.conf
+sed -i -e 's/18.217.53.35/'$JavaIP'/g' /home/Configfiles/telegraf.conf
 
