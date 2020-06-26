@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="sankara"
+           fetch="https://github.com/sankara7"
+            />
+  <default dest-branch="master"
+           remote="sankara"
+           sync-j="4" />
+
+  <project path="Ansible" name="Ansible" />
+  <project path="ING" name="ING" />
+  
+</manifest>
